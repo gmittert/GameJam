@@ -3,9 +3,9 @@ using System.Collections;
 
 public class BulletScript : MonoBehaviour {
 
-	public float lifetime = 3.0f;
+	public float lifetime = 0.5f;
 	private int damage = -1;
-	private float speed = 20;
+	private float speed = 60;
 	public GameObject LandedArrow;
 
 	// Use this for initialization
@@ -19,15 +19,16 @@ public class BulletScript : MonoBehaviour {
 			GameObject LandedArrowClone = (GameObject)Instantiate(LandedArrow, transform.position, transform.rotation);
 			Destroy(gameObject);
 		}
-		transform.Translate(Vector3.right*(speed*Mathf.Sqrt(this.lifetime))*Time.deltaTime);
+		transform.Translate(Vector3.right*(speed*Mathf.Sqrt(this.lifetime*2))*Time.deltaTime);
 	}
 
 	void SetSpeed (float speed){
 		this.speed = speed;
 	}
 
-	void OnTriggerEnter2D (Collider2D col)
+	void OnCollisionEnter2D (Collision2D col)
 	{
+		Debug.Log (col.gameObject.tag);
 		if (col.gameObject.tag == "Player")
 		{
 			Destroy(gameObject);

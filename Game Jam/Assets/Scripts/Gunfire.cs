@@ -9,10 +9,11 @@ public class Gunfire : MonoBehaviour {
 	public float fireRate = 0.1f;
 	public bool enable;
 	public int fireCone = 15;
-	public float speed = 10;
+	public float speed = 30;
 	public float speedVariance = 5;
 	public string PlayerString = "P1";
 	public AudioClip shootSound;
+	public int numArrows = 3;
 
 	private AudioSource source;
 	// Use this for initialization
@@ -26,7 +27,7 @@ public class Gunfire : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		timer += Time.deltaTime;
-		if(timer > fireRate && Input.GetButtonUp("Fire"+PlayerString)){
+		if(timer > fireRate && Input.GetButtonUp("Fire"+PlayerString) && numArrows>0){
 			//Fire Arrow
 			Quaternion bulletRotation = Quaternion.LookRotation(transform.forward, -transform.right);
 			Vector3 eulerRotation = bulletRotation.eulerAngles;
@@ -34,13 +35,24 @@ public class Gunfire : MonoBehaviour {
 			source.PlayOneShot(shootSound,1.0f);
 
 			//instantiate
-			GameObject lazerClone = (GameObject)Instantiate(Lazer,transform.position+transform.up,bulletRotation);
+			GameObject lazerClone = (GameObject)Instantiate(Lazer,transform.position+transform.up*2,bulletRotation);
 
 			//set speed
 			float lazerSpeed = speed;
 			lazerClone.SendMessage("SetSpeed", lazerSpeed);
 
 			timer = 0;
+			numArrows--;
+		}
+	}
+
+	void OnTriggerEnter2D (Collider2D col)
+	{
+		Debug.Log (col.gameObject.tag);
+		if (col.gameObject.tag == "GroundArrow")
+		{
+			numArrows++;
+			Destroy(col.gameObject);
 		}
 	}
 }
