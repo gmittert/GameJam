@@ -13,9 +13,7 @@ public class Movement : MonoBehaviour {
 		float horizontalAxis = Input.GetAxis ("Horizontal");
 		float verticalAxis = Input.GetAxis ("Vertical");
 
-
 		Vector3 toMove = new Vector3(horizontalAxis,verticalAxis);
-		Debug.Log (toMove.ToString ());
 		toMove.Normalize ();
 		this.Move (toMove);
 	}
