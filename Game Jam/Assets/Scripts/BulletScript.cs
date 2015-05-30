@@ -5,7 +5,8 @@ public class BulletScript : MonoBehaviour {
 
 	public float lifetime = 3.0f;
 	private int damage = -1;
-	private float speed = 10;
+	private float speed = 20;
+	public GameObject LandedArrow;
 	// Use this for initialization
 	void Start () {
 	
@@ -15,9 +16,10 @@ public class BulletScript : MonoBehaviour {
 	void Update () {
 		this.lifetime -= 1*Time.deltaTime;
 		if (lifetime < 0) {
+			GameObject LandedArrowClone = (GameObject)Instantiate(LandedArrow, transform.position, transform.rotation);
 			Destroy(gameObject);
 		}
-		transform.Translate(Vector3.right*speed*Time.deltaTime);
+		transform.Translate(Vector3.right*(speed*Mathf.Sqrt(this.lifetime))*Time.deltaTime);
 	}
 
 	void SetSpeed (float speed){
