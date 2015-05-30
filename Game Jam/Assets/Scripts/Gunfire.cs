@@ -20,14 +20,14 @@ public class Gunfire : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 			timer += Time.deltaTime;
-			if(timer > fireRate && Input.GetMouseButtonDown(0)){
+		if(timer > fireRate && Input.GetButtonUp("Fire1")){
 				//Fire Arrow
-				Quaternion bulletRotation = transform.rotation;
+				Quaternion bulletRotation = Quaternion.LookRotation(transform.forward, -transform.right);
 				Vector3 eulerRotation = bulletRotation.eulerAngles;
 				bulletRotation = Quaternion.Euler(eulerRotation);
 
 				//instantiate
-				GameObject lazerClone = (GameObject)Instantiate(Lazer, transform.position+transform.forward, bulletRotation);
+				GameObject lazerClone = (GameObject)Instantiate(Lazer,transform.position+transform.up,bulletRotation);
 
 				//set speed
 				float lazerSpeed = speed;

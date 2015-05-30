@@ -15,11 +15,6 @@ public class Movement : MonoBehaviour {
 
 		Vector3 toMove = new Vector3(horizontalAxis,verticalAxis);
 		toMove.Normalize ();
-		this.Move (toMove);
-	}
-
-
-	void Move (Vector3 toMove) {
-		transform.Translate(toMove*Time.deltaTime*this.speed);
+		GetComponent<CharacterController>().Move(toMove*speed*Time.deltaTime);
 	}
 }
