@@ -15,6 +15,9 @@ public class Movement : MonoBehaviour {
 
 		Vector3 toMove = new Vector3(horizontalAxis,verticalAxis);
 		toMove.Normalize ();
-		GetComponent<CharacterController>().Move(toMove*speed*Time.deltaTime);
+		try{ 
+			GetComponent<CharacterController>().Move(toMove*speed*Time.deltaTime);
+		} catch(MissingComponentException e){
+		}
 	}
 }

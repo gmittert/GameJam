@@ -55,8 +55,11 @@
 -define:UNITY_EDITOR_64
 -define:UNITY_EDITOR_WIN
 Assets/Scripts/AimAndShoot.cs
+Assets/Scripts/ArrowSound.cs
 Assets/Scripts/BulletScript.cs
 Assets/Scripts/Gunfire.cs
+Assets/Scripts/LightScript.cs
 Assets/Scripts/Movement.cs
+Assets/Scripts/characterLight.cs
 -r:B:\Programs\Unity\Editor\Data\Mono\lib\mono\unity\System.Runtime.Serialization.dll
 -r:B:\Programs\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.Linq.dll
