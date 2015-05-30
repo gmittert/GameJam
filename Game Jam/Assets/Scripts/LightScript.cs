@@ -17,19 +17,19 @@ public class LightScript : MonoBehaviour {
 	
 	}
 
-    void OnTriggerExit(Collider other)
+    void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
         {
-            other.GetComponent<characterLight>().removeLight(this);
+            other.GetComponentInParent<characterLight>().removeLight(this);
         }
     }
 
-    void OnTriggerStay(Collider other)
+    void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
         {
-            other.GetComponent<characterLight>().updateTransperencyByLight(this, GetLightValue(other.transform.position));
+            other.GetComponentInParent<characterLight>().updateTransperencyByLight(this, GetLightValue(other.transform.position));
         }
     }
 
@@ -45,7 +45,6 @@ public class LightScript : MonoBehaviour {
         {
             lightPercent /= 4f;
         }
-
         return lightPercent;
     }
 

@@ -22,9 +22,12 @@ public class characterLight : MonoBehaviour {
         {
             alpha += light.Value;
         }
-        Color spiteColour = GetComponent<SpriteRenderer>().color;
+        Color spiteColour = GetComponentInChildren<SpriteRenderer>().color;
         spiteColour.a = alpha;
-        GetComponent<SpriteRenderer>().color = spiteColour;
+        foreach (SpriteRenderer sprite in GetComponentsInChildren<SpriteRenderer>())
+        {
+            sprite.color = spiteColour;
+        }
     }
 
     public void updateTransperencyByLight(LightScript light, float transperency)

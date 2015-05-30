@@ -1,0 +1,14 @@
+C:\Progamming\Games\GameJam\Game Jam\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Progamming\Games\GameJam\Game Jam\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Progamming\Games\GameJam\Game Jam\Temp\bin\Debug\UnityEditor.dll
+C:\Progamming\Games\GameJam\Game Jam\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+C:\Progamming\Games\GameJam\Game Jam\Temp\bin\Debug\UnityEngine.dll
+C:\Progamming\Games\GameJam\Game Jam\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Progamming\Games\GameJam\Game Jam\Temp\bin\Debug\Mono.Cecil.dll
+C:\Progamming\Games\GameJam\Game Jam\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\Progamming\Games\GameJam\Game Jam\Temp\bin\Debug\Unity.DataContract.dll
+C:\Progamming\Games\GameJam\Game Jam\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Progamming\Games\GameJam\Game Jam\Temp\bin\Debug\Unity.CecilTools.dll
+C:\Progamming\Games\GameJam\Game Jam\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Progamming\Games\GameJam\Game Jam\obj\Debug\Assembly-CSharp.dll
+C:\Progamming\Games\GameJam\Game Jam\obj\Debug\Assembly-CSharp.pdb
