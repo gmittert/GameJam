@@ -3,22 +3,23 @@ using System.Collections;
 
 public class AimAndShoot : MonoBehaviour {
 	public float RotateSpeed = 10;
+	public string PlayerString = "P1";
+
 	// Use this for initialization
 	void Start () {
 	
 	}
 
-	Vector3 getInputDirection(){
-		// TODO: Add controller support here
-		Vector3 inputPos = Input.mousePosition;
-		inputPos.Normalize ();
-		return inputPos;
-	}
 	// Update is called once per frame
 	void Update () {
-		Vector3 characterPos = this.transform.position;
-		characterPos.Normalize ();
-		this.Aim (getInputDirection() - characterPos);
+		float aimHorizontal = 0;
+		float aimVertical = 0;
+		aimHorizontal = Input.GetAxis ("AimHorizontal"+PlayerString);
+		aimVertical = Input.GetAxis("AimVertical"+PlayerString);
+		
+		Vector3 toAim = new Vector3(aimHorizontal,aimVertical,0);
+		toAim.Normalize ();
+		this.Aim (toAim);
 	}
 
 	void Aim(Vector3 targetAim){

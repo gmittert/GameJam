@@ -11,6 +11,7 @@ public class Gunfire : MonoBehaviour {
 	public int fireCone = 15;
 	public float speed = 10;
 	public float speedVariance = 5;
+	public string PlayerString = "P1";
 
 	// Use this for initialization
 	void Start () {
@@ -20,7 +21,7 @@ public class Gunfire : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 			timer += Time.deltaTime;
-		if(timer > fireRate && Input.GetButtonUp("Fire1")){
+		if(timer > fireRate && Input.GetButtonUp("Fire"+PlayerString)){
 				//Fire Arrow
 				Quaternion bulletRotation = Quaternion.LookRotation(transform.forward, -transform.right);
 				Vector3 eulerRotation = bulletRotation.eulerAngles;
