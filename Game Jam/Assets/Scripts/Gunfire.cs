@@ -20,8 +20,8 @@ public class Gunfire : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 			timer += Time.deltaTime;
-			if(timer > fireRate && Input.GetKey("space")){
-				//fire cone
+			if(timer > fireRate && Input.GetMouseButtonDown(0)){
+				//Fire Arrow
 				Quaternion bulletRotation = transform.rotation;
 				Vector3 eulerRotation = bulletRotation.eulerAngles;
 				bulletRotation = Quaternion.Euler(eulerRotation);

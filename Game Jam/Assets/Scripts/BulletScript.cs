@@ -17,7 +17,7 @@ public class BulletScript : MonoBehaviour {
 		if (lifetime < 0) {
 			Destroy(gameObject);
 		}
-		transform.Translate(Vector3.up*speed*Time.deltaTime);
+		transform.Translate(Vector3.right*speed*Time.deltaTime);
 	}
 
 	void SetSpeed (float speed){
