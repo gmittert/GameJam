@@ -7,9 +7,9 @@ public class BulletScript : MonoBehaviour {
 	private int damage = -1;
 	private float speed = 20;
 	public GameObject LandedArrow;
+
 	// Use this for initialization
 	void Start () {
-	
 	}
 	
 	// Update is called once per frame
