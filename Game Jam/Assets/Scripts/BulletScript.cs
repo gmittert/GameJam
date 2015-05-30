@@ -7,9 +7,9 @@ public class BulletScript : MonoBehaviour {
 	private int damage = -1;
 	private float speed = 20;
 	public GameObject LandedArrow;
+
 	// Use this for initialization
 	void Start () {
-	
 	}
 	
 	// Update is called once per frame
@@ -28,8 +28,13 @@ public class BulletScript : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D col)
 	{
-		if (col.gameObject.tag == "player")
+		if (col.gameObject.tag == "Player")
 		{
+			Destroy(gameObject);
+		}
+		if (col.gameObject.tag == "Wall")
+		{
+			GameObject LandedArrowClone = (GameObject)Instantiate(LandedArrow, transform.position, transform.rotation);
 			Destroy(gameObject);
 		}
 	}
