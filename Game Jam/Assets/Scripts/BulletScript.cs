@@ -5,7 +5,7 @@ public class BulletScript : MonoBehaviour {
 
 	public float lifetime = 0.5f;
 	private int damage = -1;
-	private float speed = 60;
+	private float speed = 0;
 	public GameObject LandedArrow;
 
 	// Use this for initialization
@@ -31,6 +31,7 @@ public class BulletScript : MonoBehaviour {
 		Debug.Log (col.gameObject.tag);
 		if (col.gameObject.tag == "Player")
 		{
+			col.gameObject.SendMessage("Die",1);
 			Destroy(gameObject);
 		}
 		if (col.gameObject.tag == "Wall")

@@ -13,7 +13,7 @@ GameObject:
   - 114: {fileID: 11491128}
   m_Layer: 0
   m_Name: Character
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,6 +29,7 @@ GameObject:
   - 212: {fileID: 21259640}
   - 50: {fileID: 5098072}
   - 61: {fileID: 6179748}
+  - 114: {fileID: 11423844}
   m_Layer: 0
   m_Name: BODY_animation_46
   m_TagString: Player
@@ -62,6 +63,7 @@ GameObject:
   - 4: {fileID: 494240}
   - 114: {fileID: 11420072}
   - 114: {fileID: 11448630}
+  - 61: {fileID: 6150738}
   m_Layer: 0
   m_Name: Weapon
   m_TagString: Untagged
@@ -135,6 +137,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &6150738
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 169124}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
 --- !u!61 &6179748
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -168,6 +183,18 @@ MonoBehaviour:
   speedVariance: 5
   PlayerString: P1
   shootSound: {fileID: 0}
+  numArrows: 3
+--- !u!114 &11423844
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 145014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e1c43e537b91ee4e8694e2601f818e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11448630
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -194,6 +221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   PlayerString: P1
+  Deadguy: {fileID: 178030, guid: 988d2bc476c55524d846df7852e33f8d, type: 2}
 --- !u!114 &11491128
 MonoBehaviour:
   m_ObjectHideFlags: 1
