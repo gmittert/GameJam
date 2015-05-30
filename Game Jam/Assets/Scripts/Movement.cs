@@ -15,7 +15,6 @@ public class Movement : MonoBehaviour {
 
 
 		Vector3 toMove = new Vector3(horizontalAxis,verticalAxis);
-		Debug.Log (toMove.ToString ());
 		toMove.Normalize ();
 		this.Move (toMove);
 	}

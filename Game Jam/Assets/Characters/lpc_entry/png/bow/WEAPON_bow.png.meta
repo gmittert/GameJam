@@ -1,9 +1,83 @@
 fileFormatVersion: 2
 guid: e4e0bbb2bf0dfd6409cdd84e12eeadc4
-timeCreated: 1432995185
+timeCreated: 1432996194
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: WEAPON_bow_0
+    21300002: WEAPON_bow_1
+    21300004: WEAPON_bow_2
+    21300006: WEAPON_bow_3
+    21300008: WEAPON_bow_4
+    21300010: WEAPON_bow_5
+    21300012: WEAPON_bow_6
+    21300014: WEAPON_bow_7
+    21300016: WEAPON_bow_8
+    21300018: WEAPON_bow_9
+    21300020: WEAPON_bow_10
+    21300022: WEAPON_bow_11
+    21300024: WEAPON_bow_12
+    21300026: WEAPON_bow_13
+    21300028: WEAPON_bow_14
+    21300030: WEAPON_bow_15
+    21300032: WEAPON_bow_16
+    21300034: WEAPON_bow_17
+    21300036: WEAPON_bow_18
+    21300038: WEAPON_bow_19
+    21300040: WEAPON_bow_20
+    21300042: WEAPON_bow_21
+    21300044: WEAPON_bow_22
+    21300046: WEAPON_bow_23
+    21300048: WEAPON_bow_24
+    21300050: WEAPON_bow_25
+    21300052: WEAPON_bow_26
+    21300054: WEAPON_bow_27
+    21300056: WEAPON_bow_28
+    21300058: WEAPON_bow_29
+    21300060: WEAPON_bow_30
+    21300062: WEAPON_bow_31
+    21300064: WEAPON_bow_32
+    21300066: WEAPON_bow_33
+    21300068: WEAPON_bow_34
+    21300070: WEAPON_bow_35
+    21300072: WEAPON_bow_36
+    21300074: WEAPON_bow_37
+    21300076: WEAPON_bow_38
+    21300078: WEAPON_bow_39
+    21300080: WEAPON_bow_40
+    21300082: WEAPON_bow_41
+    21300084: WEAPON_bow_42
+    21300086: WEAPON_bow_43
+    21300088: WEAPON_bow_44
+    21300090: WEAPON_bow_45
+    21300092: WEAPON_bow_46
+    21300094: WEAPON_bow_47
+    21300096: WEAPON_bow_48
+    21300098: WEAPON_bow_49
+    21300100: WEAPON_bow_50
+    21300102: WEAPON_bow_51
+    21300104: WEAPON_bow_52
+    21300106: WEAPON_bow_53
+    21300108: WEAPON_bow_54
+    21300110: WEAPON_bow_55
+    21300112: WEAPON_bow_56
+    21300114: WEAPON_bow_57
+    21300116: WEAPON_bow_58
+    21300118: WEAPON_bow_59
+    21300120: WEAPON_bow_60
+    21300122: WEAPON_bow_61
+    21300124: WEAPON_bow_62
+    21300126: WEAPON_bow_63
+    21300128: WEAPON_bow_64
+    21300130: WEAPON_bow_65
+    21300132: WEAPON_bow_66
+    21300134: WEAPON_bow_67
+    21300136: WEAPON_bow_68
+    21300138: WEAPON_bow_69
+    21300140: WEAPON_bow_70
+    21300142: WEAPON_bow_71
+    21300144: WEAPON_bow_72
+    21300146: WEAPON_bow_73
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,14 +104,14 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +122,747 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: WEAPON_bow_0
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 240
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_1
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 239
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_2
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 239
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_3
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 239
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_4
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 239
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_5
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 240
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_6
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 239
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_7
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 239
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_8
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 239
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_9
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 239
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_10
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 206
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_11
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 210
+        width: 9
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_12
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 219
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_13
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 204
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_14
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 147
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_15
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 139
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_16
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 131
+        width: 16
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_17
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 136
+        width: 16
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_18
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 160
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_19
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 161
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_20
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 161
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_21
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 159
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_22
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 137
+        width: 16
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_23
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 137
+        width: 16
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_24
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 137
+        width: 16
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_25
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 137
+        width: 16
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_26
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 144
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_27
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 149
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_28
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 139
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_29
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 141
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_30
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 141
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_31
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 137
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_32
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 134
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_33
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 78
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_34
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 75
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_35
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 72
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_36
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 83
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_37
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 86
+        width: 7
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_38
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 88
+        width: 7
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_39
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 89
+        width: 7
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_40
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 90
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_41
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 87
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_42
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 86
+        width: 7
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_43
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 86
+        width: 7
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_44
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 86
+        width: 7
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_45
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 86
+        width: 7
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_46
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 64
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_47
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 64
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_48
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 66
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_49
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 67
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_50
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 67
+        width: 9
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_51
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 64
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_52
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 64
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_53
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 64
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_54
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 64
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_55
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 19
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_56
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 11
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_57
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 3
+        width: 16
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_58
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 8
+        width: 16
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_59
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 32
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_60
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 33
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_61
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 33
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_62
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 31
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_63
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 9
+        width: 16
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_64
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 9
+        width: 16
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_65
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 9
+        width: 16
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_66
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 9
+        width: 16
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_67
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 21
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_68
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 16
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_69
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 11
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_70
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 13
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_71
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 13
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_72
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 9
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WEAPON_bow_73
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 6
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

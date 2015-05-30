@@ -1,9 +1,61 @@
 fileFormatVersion: 2
 guid: 7fc9908e555925443bd067bdbfca9524
-timeCreated: 1432995159
+timeCreated: 1432995987
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: BODY_animation_0
+    21300002: BODY_animation_1
+    21300004: BODY_animation_2
+    21300006: BODY_animation_3
+    21300008: BODY_animation_4
+    21300010: BODY_animation_5
+    21300012: BODY_animation_6
+    21300014: BODY_animation_7
+    21300016: BODY_animation_8
+    21300018: BODY_animation_9
+    21300020: BODY_animation_10
+    21300022: BODY_animation_11
+    21300024: BODY_animation_12
+    21300026: BODY_animation_13
+    21300028: BODY_animation_14
+    21300030: BODY_animation_15
+    21300032: BODY_animation_16
+    21300034: BODY_animation_17
+    21300036: BODY_animation_18
+    21300038: BODY_animation_19
+    21300040: BODY_animation_20
+    21300042: BODY_animation_21
+    21300044: BODY_animation_22
+    21300046: BODY_animation_23
+    21300048: BODY_animation_24
+    21300050: BODY_animation_25
+    21300052: BODY_animation_26
+    21300054: BODY_animation_27
+    21300056: BODY_animation_28
+    21300058: BODY_animation_29
+    21300060: BODY_animation_30
+    21300062: BODY_animation_31
+    21300064: BODY_animation_32
+    21300066: BODY_animation_33
+    21300068: BODY_animation_34
+    21300070: BODY_animation_35
+    21300072: BODY_animation_36
+    21300074: BODY_animation_37
+    21300076: BODY_animation_38
+    21300078: BODY_animation_39
+    21300080: BODY_animation_40
+    21300082: BODY_animation_41
+    21300084: BODY_animation_42
+    21300086: BODY_animation_43
+    21300088: BODY_animation_44
+    21300090: BODY_animation_45
+    21300092: BODY_animation_46
+    21300094: BODY_animation_47
+    21300096: BODY_animation_48
+    21300098: BODY_animation_49
+    21300100: BODY_animation_50
+    21300102: BODY_animation_51
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,14 +82,14 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +100,527 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: BODY_animation_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 194
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_1
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 192
+        width: 26
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_2
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 192
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_3
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 192
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_4
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 192
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_5
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 192
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_6
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 192
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_7
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 192
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_8
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 192
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_9
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 192
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_10
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 192
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_11
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 192
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_12
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 192
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_13
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 130
+        width: 20
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_14
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 130
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_15
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 130
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_16
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 130
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_17
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 130
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_18
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 130
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_19
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 130
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_20
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 130
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_21
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 130
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_22
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 130
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_23
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 130
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_24
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 130
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_25
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 130
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_26
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 66
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_27
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 67
+        width: 25
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_28
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 67
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_29
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 66
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_30
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 66
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_31
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 66
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_32
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 66
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_33
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 66
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_34
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 66
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_35
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 66
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_36
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 66
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_37
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 66
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_38
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 66
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_39
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 2
+        width: 20
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_40
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 2
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_41
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 2
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_42
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 2
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_43
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 2
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_44
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 2
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_45
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 2
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_46
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 2
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_47
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 2
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_48
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 2
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_49
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 2
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_50
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 2
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BODY_animation_51
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 2
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
