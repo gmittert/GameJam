@@ -7,21 +7,18 @@ public class AimAndShoot : MonoBehaviour {
 	void Start () {
 	
 	}
-	
+
+	Vector3 getInputDirection(){
+		// TODO: Add controller support here
+		Vector3 inputPos = Input.mousePosition;
+		inputPos.Normalize ();
+		return inputPos;
+	}
 	// Update is called once per frame
 	void Update () {
-		float aimHorizontal = 0;
-		float aimVertical = 0;
-
-
-		aimHorizontal = Input.GetAxis ("AimHorizontal");
-			
-		aimVertical = Input.GetAxis("AimVertical");
-
-		Vector3 toAim = new Vector3(aimHorizontal,aimVertical,0);
-		toAim.Normalize ();
-		this.Aim (toAim);
-
+		Vector3 characterPos = this.transform.position;
+		characterPos.Normalize ();
+		this.Aim (getInputDirection() - characterPos);
 	}
 
 	void Aim(Vector3 targetAim){
