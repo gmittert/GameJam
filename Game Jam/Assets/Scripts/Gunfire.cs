@@ -52,7 +52,10 @@ public class Gunfire : MonoBehaviour {
 		if (col.gameObject.tag == "GroundArrow")
 		{
 			numArrows++;
-			Destroy(col.gameObject);
-		}
+            col.GetComponentInChildren<LightScript>().FadeAway(.25f);
+            col.GetComponentInChildren<BoxCollider2D>().enabled = false;
+            col.GetComponentInChildren<SpriteRenderer>().color = new Color(0, 0, 0, 0);
+            Destroy(col.gameObject, .25f);
+        }
 	}
 }

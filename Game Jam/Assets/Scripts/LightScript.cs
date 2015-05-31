@@ -5,6 +5,9 @@ public class LightScript : MonoBehaviour {
     float radius;
     List<characterLight> characters;
     public bool overrideLight = false;
+    float fadeTime = -1f;
+    float age = 0f;
+    float initialLightIntensity;
 
 	// Use this for initialization
 	void Start () {
@@ -12,10 +15,13 @@ public class LightScript : MonoBehaviour {
         //makes the detection opject the same size as the light
         radius = GetComponent<Light>().range;
         GetComponent<CircleCollider2D>().radius = radius;
+        initialLightIntensity = GetComponent<Light>().intensity;
     }
 	
 	// Update is called once per frame
 	void Update () {
+        age += Time.deltaTime;
+
         foreach (characterLight character in characters)
         {
             character.updateTransperencyByLight(this, GetLightValue(character.transform.position));
@@ -47,6 +53,14 @@ public class LightScript : MonoBehaviour {
         }
     }
 
+    public void FadeAway(float timeToFade)
+    {
+        Debug.Log("Going to die");
+        fadeTime = timeToFade;
+        age = 0f;
+        Destroy(gameObject, timeToFade);
+    }
+
     float GetLightValue( Vector2 position )
     {
         float lightPercent = Mathf.Max(radius - GetDistance(position), 0f) / radius;
@@ -73,8 +87,14 @@ public class LightScript : MonoBehaviour {
                 lightPercent /= 4f;
             }
         }
-        
 
+        if (fadeTime != -1)
+        {
+            Debug.Log("Dying!!");
+            float percentDead = age / fadeTime;
+            GetComponent<Light>().intensity = Mathf.Lerp(initialLightIntensity, 0f, percentDead);
+            lightPercent *= percentDead;
+        }
         
         return lightPercent;
     }
