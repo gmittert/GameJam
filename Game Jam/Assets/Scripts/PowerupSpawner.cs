@@ -33,10 +33,12 @@ public class PowerupSpawner : MonoBehaviour {
         }
         randomSpawnTime = Random.Range(earliestSpawn, latestSpawn);
         pickupToSpawn = Random.Range(0, 3);
+        Debug.Log(pickupToSpawn);
         while ((!spawnLightEmUp && pickupToSpawn == 0) || (!spawnMoreArrows && pickupToSpawn == 1) || (!BetterBow && pickupToSpawn == 2))
         {
             pickupToSpawn = Random.Range(0, 2);
         }
+        Debug.Log(pickupToSpawn);
     }
 
     // Update is called once per frame

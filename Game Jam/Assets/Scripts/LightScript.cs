@@ -21,10 +21,28 @@ public class LightScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         age += Time.deltaTime;
-
+        List<characterLight> toRemove = null;
         foreach (characterLight character in characters)
         {
-            character.updateTransperencyByLight(this, GetLightValue(character.transform.position));
+            if (character == null)
+            {
+                if (toRemove == null)
+                {
+                    toRemove = new List<characterLight>();
+                }
+                toRemove.Add(character);
+            }
+            else
+            {
+                character.updateTransperencyByLight(this, GetLightValue(character.transform.position));
+            }
+        }
+        if (toRemove != null)
+        {
+            foreach (characterLight character in toRemove)
+            {
+                characters.Remove(character);
+            }
         }
 	}
 
@@ -53,19 +71,23 @@ public class LightScript : MonoBehaviour {
 
 	void OnDisable()
 	{
+        if (characters == null)
+        {
+            return;
+        }
 		foreach (characterLight character in characters)
 		{
 			character.removeLight(this);
 		}
 	}
 	
-	void OnDestroy()
-	{
-        foreach (characterLight character in characters)
-        {
-            character.removeLight(this);
-        }
-    }
+	//void OnDestroy()
+	//{
+ //       foreach (characterLight character in characters)
+ //       {
+ //           character.removeLight(this);
+ //       }
+ //   }
 
     public void FadeAway(float timeToFade)
     {
