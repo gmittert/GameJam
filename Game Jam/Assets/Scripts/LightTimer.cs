@@ -11,6 +11,6 @@ public class LightTimer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Light.intensity = 2;
+		//Light.intensity = 2;
 	}
 }
