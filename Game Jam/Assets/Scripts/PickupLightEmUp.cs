@@ -5,7 +5,6 @@ public class PickupLightEmUp : MonoBehaviour {
 
     public float lightUpLength = 2.0f;
     public float fadeTime = .25f;
-    public Vector3 spawnPoint;
     public GameObject lightPlayersUp;
 
     // Use this for initialization
@@ -20,7 +19,6 @@ public class PickupLightEmUp : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("PICKUP");
         if (other.gameObject.tag == "Player")
         {
             characterLight pickupCharacter = other.GetComponentInParent<characterLight>();

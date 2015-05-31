@@ -42,7 +42,11 @@ MonoBehaviour:
   earliestSpawn: 0
   latestSpawn: 25
   spawnLightEmUp: 1
-  LightEmUp: {fileID: 0}
+  spawnMoreArrows: 1
+  spawnBetterBow: 1
+  LightEmUp: {fileID: 100170, guid: bcd5e734efb8bee488f8465c50bd2675, type: 2}
+  MoreArrows: {fileID: 137382, guid: 80b7052595d2a8c41ac0778bc157869d, type: 2}
+  BetterBow: {fileID: 176930, guid: d358884bf5ece8e46aaf3ba039d2672a, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

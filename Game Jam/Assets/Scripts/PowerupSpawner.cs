@@ -10,8 +10,12 @@ public class PowerupSpawner : MonoBehaviour {
     public float earliestSpawn = 0f;
     public float latestSpawn = 25f;
     public bool spawnLightEmUp = true;
+    public bool spawnMoreArrows = true;
+    public bool spawnBetterBow = true;
 
     public GameObject LightEmUp;
+    public GameObject MoreArrows;
+    public GameObject BetterBow;
 
     // Use this for initialization
     void Start () {
@@ -20,8 +24,17 @@ public class PowerupSpawner : MonoBehaviour {
 
     void Setup()
     {
+        if (!spawnLightEmUp && !spawnMoreArrows && !spawnBetterBow)
+        {
+            Destroy(gameObject);
+            return;
+        }
         randomSpawnTime = Random.Range(earliestSpawn, latestSpawn);
-        pickupToSpawn = Random.Range(0, 0);
+        pickupToSpawn = Random.Range(0, 3);
+        while ((!spawnLightEmUp && pickupToSpawn == 0) || (!spawnMoreArrows && pickupToSpawn == 1) || (!BetterBow && pickupToSpawn == 2))
+        {
+            pickupToSpawn = Random.Range(0, 2);
+        }
     }
 
     // Update is called once per frame
@@ -48,6 +61,12 @@ public class PowerupSpawner : MonoBehaviour {
         {
             case 0:
                 powerUp = (GameObject)Instantiate(LightEmUp, transform.position, transform.rotation);
+                break;
+            case 1:
+                powerUp = (GameObject)Instantiate(MoreArrows, transform.position, transform.rotation);
+                break;
+            case 2:
+                powerUp = (GameObject)Instantiate(BetterBow, transform.position, transform.rotation);
                 break;
         }
     }
