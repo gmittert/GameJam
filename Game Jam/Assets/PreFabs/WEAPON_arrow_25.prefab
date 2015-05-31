@@ -12,6 +12,7 @@ GameObject:
   - 114: {fileID: 11441866}
   - 61: {fileID: 6135060}
   - 50: {fileID: 5084656}
+  - 82: {fileID: 8229192}
   m_Layer: 0
   m_Name: WEAPON_arrow_25
   m_TagString: Untagged
@@ -103,6 +104,75 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: .270000011, y: .0399999991}
+--- !u!82 &8229192
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166952}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 094e43c81174f2a40b75a5fe8313c98d, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: .481000006
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!108 &10854918
 Light:
   m_ObjectHideFlags: 1
@@ -148,6 +218,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifetime: .800000012
   LandedArrow: {fileID: 155242, guid: a9090f43fb69a4748915cb3244d5a474, type: 2}
+  clatter: {fileID: 8300000, guid: 094e43c81174f2a40b75a5fe8313c98d, type: 3}
+  deathSound1: {fileID: 8300000, guid: d42dff0f04f27aa42a38afe500298548, type: 3}
+  deathSound2: {fileID: 8300000, guid: 82e8f955b46cb024295172caa18596d3, type: 3}
+  deathSound3: {fileID: 8300000, guid: 80dc7f7bff3d787479b98fbaa52329f3, type: 3}
+  deathSound4: {fileID: 8300000, guid: 83416ac385b140240916dfd822e8852d, type: 3}
 --- !u!114 &11459438
 MonoBehaviour:
   m_ObjectHideFlags: 1

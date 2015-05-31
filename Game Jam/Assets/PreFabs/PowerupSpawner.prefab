@@ -47,6 +47,8 @@ MonoBehaviour:
   LightEmUp: {fileID: 100170, guid: bcd5e734efb8bee488f8465c50bd2675, type: 2}
   MoreArrows: {fileID: 137382, guid: 80b7052595d2a8c41ac0778bc157869d, type: 2}
   BetterBow: {fileID: 176930, guid: d358884bf5ece8e46aaf3ba039d2672a, type: 2}
+  sound: {fileID: 8300000, guid: aed49241c2b92634f98bf4a5fad0a9b5, type: 3}
+  got: {fileID: 8300000, guid: 9b75c289f60f44745b193261ac16edf3, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

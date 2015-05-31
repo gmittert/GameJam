@@ -17,6 +17,8 @@ public class PowerupSpawner : MonoBehaviour {
     public GameObject MoreArrows;
     public GameObject BetterBow;
 
+	public AudioClip sound;
+	public AudioClip got;
     // Use this for initialization
     void Start () {
         Setup();
@@ -69,11 +71,13 @@ public class PowerupSpawner : MonoBehaviour {
                 powerUp = (GameObject)Instantiate(BetterBow, transform.position, transform.rotation);
                 break;
         }
+		AudioSource.PlayClipAtPoint(sound,transform.position, 0.25f);
     }
 
     void Reset()
     {
         powerupOnLevel = false;
+		AudioSource.PlayClipAtPoint(got,transform.position, 0.25f);
         Setup();
     }
 

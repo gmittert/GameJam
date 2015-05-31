@@ -60,5 +60,6 @@ public class Gunfire : MonoBehaviour {
             col.GetComponentInChildren<BoxCollider2D>().enabled = false;
             col.GetComponentInChildren<SpriteRenderer>().color = new Color(0, 0, 0, 0);
             Destroy(col.gameObject, .25f);
-        }	}
+        }	
+	}
 }
