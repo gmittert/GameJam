@@ -296,7 +296,7 @@ SpriteRenderer:
   m_GameObject: {fileID: 138202}
   m_Enabled: 1
   m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: 8dbcd9fcf653aef4086854a3670eae71, type: 2}
   m_SubsetIndices: 
@@ -322,7 +322,7 @@ SpriteRenderer:
   m_GameObject: {fileID: 128250}
   m_Enabled: 1
   m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: 8dbcd9fcf653aef4086854a3670eae71, type: 2}
   m_SubsetIndices: 
@@ -348,7 +348,7 @@ SpriteRenderer:
   m_GameObject: {fileID: 102756}
   m_Enabled: 1
   m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: 8dbcd9fcf653aef4086854a3670eae71, type: 2}
   m_SubsetIndices: 
@@ -374,7 +374,7 @@ SpriteRenderer:
   m_GameObject: {fileID: 110132}
   m_Enabled: 1
   m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: 8dbcd9fcf653aef4086854a3670eae71, type: 2}
   m_SubsetIndices: 
@@ -400,7 +400,7 @@ SpriteRenderer:
   m_GameObject: {fileID: 178080}
   m_Enabled: 1
   m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: 8dbcd9fcf653aef4086854a3670eae71, type: 2}
   m_SubsetIndices: 
@@ -426,7 +426,7 @@ SpriteRenderer:
   m_GameObject: {fileID: 154310}
   m_Enabled: 1
   m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: 8dbcd9fcf653aef4086854a3670eae71, type: 2}
   m_SubsetIndices: 
@@ -452,7 +452,7 @@ SpriteRenderer:
   m_GameObject: {fileID: 142470}
   m_Enabled: 1
   m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: 8dbcd9fcf653aef4086854a3670eae71, type: 2}
   m_SubsetIndices: 
@@ -478,7 +478,7 @@ SpriteRenderer:
   m_GameObject: {fileID: 156976}
   m_Enabled: 1
   m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: 8dbcd9fcf653aef4086854a3670eae71, type: 2}
   m_SubsetIndices: 
@@ -504,7 +504,7 @@ SpriteRenderer:
   m_GameObject: {fileID: 191062}
   m_Enabled: 1
   m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: 8dbcd9fcf653aef4086854a3670eae71, type: 2}
   m_SubsetIndices: 
