@@ -1,12 +1,14 @@
 ﻿using UnityEngine;
-//using System.Collections.Generic;
+using System.Collections.Generic;
 
 public class LightScript : MonoBehaviour {
     float radius;
-    //List<characterLight> characters;
+    List<characterLight> characters;
+    public bool overrideLight = false;
 
 	// Use this for initialization
 	void Start () {
+        characters = new List<characterLight>();
         //makes the detection opject the same size as the light
         radius = GetComponent<Light>().range;
         GetComponent<CircleCollider2D>().radius = radius;
@@ -14,37 +16,66 @@ public class LightScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+        foreach (characterLight character in characters)
+        {
+            character.updateTransperencyByLight(this, GetLightValue(character.transform.position));
+        }
 	}
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            characters.Add(other.GetComponentInParent<characterLight>());
+        }
+    }
 
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
         {
             other.GetComponentInParent<characterLight>().removeLight(this);
+            characters.Remove(other.GetComponentInParent<characterLight>());
         }
     }
 
-    void OnTriggerStay2D(Collider2D other)
+    void OnDestroy()
     {
-        if (other.gameObject.tag == "Player")
+        foreach (characterLight character in characters)
         {
-            other.GetComponentInParent<characterLight>().updateTransperencyByLight(this, GetLightValue(other.transform.position));
+            character.removeLight(this);
         }
     }
 
-        float GetLightValue( Vector2 position )
+    float GetLightValue( Vector2 position )
     {
         float lightPercent = Mathf.Max(radius - GetDistance(position), 0f) / radius;
 
-        if (lightPercent >= 0.5f)
+        if (overrideLight)
         {
-            lightPercent += (lightPercent / 4f) + (lightPercent - 0.5f) * 1.5f;
+            if (lightPercent >= 0.5f)
+            {
+                lightPercent = 0.75f + (lightPercent - .5f) / 2f;
+            }
+            else
+            {
+                lightPercent *= 1.5f;
+            }
         }
         else
         {
-            lightPercent /= 4f;
+            if (lightPercent >= 0.5f)
+            {
+                lightPercent = (lightPercent / 4f) + (lightPercent - 0.5f) * 1.5f;
+            }
+            else
+            {
+                lightPercent /= 4f;
+            }
         }
+        
+
+        
         return lightPercent;
     }
 
