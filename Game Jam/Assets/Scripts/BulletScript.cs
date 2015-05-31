@@ -15,7 +15,7 @@ public class BulletScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		this.lifetime -= 1*Time.deltaTime;
-		if (lifetime < 0) {
+		if (lifetime < 0.1f) {
 			GameObject LandedArrowClone = (GameObject)Instantiate(LandedArrow, transform.position, transform.rotation);
 			Destroy(gameObject);
 		}

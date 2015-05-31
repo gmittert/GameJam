@@ -45,8 +45,8 @@ public class Gunfire : MonoBehaviour {
 
 			timer = 0;
 			numArrows--;
-			Debug.Log(ArrowRect.sizeDelta.x);
-			ArrowRect.sizeDelta = new Vector2(ArrowRect.sizeDelta.x-1,1);
+			//Debug.Log(ArrowRect.sizeDelta.x);
+			//ArrowRect.sizeDelta = new Vector2(ArrowRect.sizeDelta.x-1,1);
 		}
 	}
 
@@ -55,7 +55,8 @@ public class Gunfire : MonoBehaviour {
 		if (col.gameObject.tag == "GroundArrow")
 		{
 			numArrows++;
-			ArrowRect.sizeDelta = new Vector2(ArrowRect.sizeDelta.x+1,1);			col.GetComponentInChildren<LightScript>().FadeAway(.25f);
+            //ArrowRect.sizeDelta = new Vector2(ArrowRect.sizeDelta.x+1,1);			
+            col.GetComponentInChildren<LightScript>().FadeAway(.25f);
             col.GetComponentInChildren<BoxCollider2D>().enabled = false;
             col.GetComponentInChildren<SpriteRenderer>().color = new Color(0, 0, 0, 0);
             Destroy(col.gameObject, .25f);

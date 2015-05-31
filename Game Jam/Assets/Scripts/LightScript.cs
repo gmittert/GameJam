@@ -45,6 +45,12 @@ public class LightScript : MonoBehaviour {
         }
     }
 
+    public void RemoveCharacter (characterLight character)
+    {
+        characters.Remove(character);
+        Debug.Log("Removed: " + character);
+    }
+
 	void OnDisable()
 	{
 		foreach (characterLight character in characters)
