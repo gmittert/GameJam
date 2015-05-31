@@ -23,8 +23,8 @@ public class Movement : MonoBehaviour {
 	}
 
 	void Die(int a){
-		Debug.Log ("I'm Dead Twice!");
 		GameObject DeadguyClone = (GameObject)Instantiate(Deadguy,transform.position,Quaternion.Euler(Vector3.up));
+		Camera.main.SendMessage ("deathNotice", int.Parse(PlayerString.Substring(1)));
 		Destroy (gameObject);
 	}
 }
