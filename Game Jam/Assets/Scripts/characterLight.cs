@@ -46,4 +46,13 @@ public class characterLight : MonoBehaviour {
     {
         lights.Remove(light);
     }
+
+    void OnDestroy()
+    {
+        Debug.Log("Removing characters");
+        foreach (KeyValuePair<LightScript, float> light in lights)
+        {
+            light.Key.RemoveCharacter(this);
+        }
+    }
 }

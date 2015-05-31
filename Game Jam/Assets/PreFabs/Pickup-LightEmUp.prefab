@@ -43,8 +43,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100170}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.28000021, y: 2.78999996, z: 0}
-  m_LocalScale: {x: 3.19903469, y: 3.19903517, z: 3.19903517}
+  m_LocalPosition: {x: -3.70012379, y: -1.61291242, z: -.219999999}
+  m_LocalScale: {x: 2.69267774, y: 2.69267774, z: 2.69267774}
   m_Children:
   - {fileID: 490782}
   m_Father: {fileID: 0}
@@ -98,7 +98,7 @@ Light:
   m_Type: 2
   m_Color: {r: 1, g: .887563467, b: .141176462, a: 1}
   m_Intensity: 8
-  m_Range: 3.96000004
+  m_Range: 4
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -131,6 +131,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightUpLength: 2
+  fadeTime: .25
+  lightPlayersUp: {fileID: 179782, guid: a7fe598a599d84b4285265700fda30c5, type: 2}
 --- !u!114 &11421572
 MonoBehaviour:
   m_ObjectHideFlags: 1

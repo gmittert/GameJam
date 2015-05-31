@@ -126,7 +126,7 @@ Transform:
   m_GameObject: {fileID: 143944}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .75, y: -1.39999998, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children:
   - {fileID: 494240}
   - {fileID: 432298}
@@ -298,11 +298,12 @@ MonoBehaviour:
   fireRate: .100000001
   enable: 0
   fireCone: 15
-  speed: 30
+  speed: 15
   speedVariance: 5
   PlayerString: P1
-  shootSound: {fileID: 0}
+  shootSound: {fileID: 8300000, guid: 6e78a5b674373c549b0bfaace2c84964, type: 3}
   numArrows: 3
+  ArrowUI: {fileID: 0}
 --- !u!114 &11423844
 MonoBehaviour:
   m_ObjectHideFlags: 1
