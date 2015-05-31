@@ -12,6 +12,5 @@ public class VictoyChecks : MonoBehaviour {
 	}
 
 	void deathNotice(int player){
-		playerlist.
 	}
 }

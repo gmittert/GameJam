@@ -49,8 +49,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 453360}
   - 212: {fileID: 21216280}
-  - 50: {fileID: 5095596}
-  - 61: {fileID: 6102052}
   m_Layer: 0
   m_Name: Lava
   m_TagString: Untagged
@@ -127,21 +125,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 103552}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!50 &5095596
-Rigidbody2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 192288}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 1
-  m_FixedAngle: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
 --- !u!54 &5461408
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -170,19 +153,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 4.4000001
---- !u!61 &6102052
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 192288}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: .810000002, y: .790000021}
 --- !u!65 &6538656
 BoxCollider:
   m_ObjectHideFlags: 1
