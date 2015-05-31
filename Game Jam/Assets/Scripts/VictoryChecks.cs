@@ -17,9 +17,10 @@ public class VictoryChecks : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (playerlist.Count == 1) {
-			Endgame((int)playerlist[0]);
+			Debug.Log ("Almost DONE");
+			StartCoroutine(Endgame((int)playerlist[0]));
 		} else if (playerlist.Count < 1) {
-			Endgame(0);
+			StartCoroutine(Endgame(0));
 		}
 	}
 
@@ -28,7 +29,8 @@ public class VictoryChecks : MonoBehaviour {
 		Debug.Log (playerlist.Count);
 	}
 
-	void Endgame(int winner){
+	IEnumerator Endgame(int winner){
+		Debug.Log ("DONE");
 		Text VictoryText = VictoryBanner.GetComponent<Text> ();
 		if (winner > 0) {
 			VictoryText.text = "Player " + winner.ToString () + " wins!";
@@ -36,5 +38,8 @@ public class VictoryChecks : MonoBehaviour {
 			VictoryText.text = "Nobody wins.";
 		}
 		VictoryBanner.SetActive (true);
+		
+		yield return new WaitForSeconds(1);
+		Application.LoadLevel (Application.loadedLevel);
 	}
 }

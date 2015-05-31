@@ -34,7 +34,7 @@ public class Gunfire : MonoBehaviour {
 			Quaternion bulletRotation = Quaternion.LookRotation(transform.forward, -transform.right);
 			Vector3 eulerRotation = bulletRotation.eulerAngles;
 			bulletRotation = Quaternion.Euler(eulerRotation);
-			source.PlayOneShot(shootSound,1.0f);
+//			source.PlayOneShot(shootSound,1.0f);
 
 			//instantiate
 			GameObject lazerClone = (GameObject)Instantiate(Lazer,transform.position+transform.up*2,bulletRotation);
@@ -46,7 +46,7 @@ public class Gunfire : MonoBehaviour {
 			timer = 0;
 			numArrows--;
 			//Debug.Log(ArrowRect.sizeDelta.x);
-			//ArrowRect.sizeDelta = new Vector2(ArrowRect.sizeDelta.x-1,1);
+			ArrowRect.sizeDelta = new Vector2(ArrowRect.sizeDelta.x-1,1);
 		}
 	}
 
@@ -55,7 +55,7 @@ public class Gunfire : MonoBehaviour {
 		if (col.gameObject.tag == "GroundArrow")
 		{
 			numArrows++;
-            //ArrowRect.sizeDelta = new Vector2(ArrowRect.sizeDelta.x+1,1);			
+            ArrowRect.sizeDelta = new Vector2(ArrowRect.sizeDelta.x+1,1);			
             col.GetComponentInChildren<LightScript>().FadeAway(.25f);
             col.GetComponentInChildren<BoxCollider2D>().enabled = false;
             col.GetComponentInChildren<SpriteRenderer>().color = new Color(0, 0, 0, 0);
