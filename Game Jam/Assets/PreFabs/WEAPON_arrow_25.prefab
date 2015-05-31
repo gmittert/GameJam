@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7d337591804a2d42987d1ce31201a7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifetime: .5
+  lifetime: .800000012
   LandedArrow: {fileID: 155242, guid: a9090f43fb69a4748915cb3244d5a474, type: 2}
 --- !u!114 &11459438
 MonoBehaviour:
