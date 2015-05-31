@@ -25,6 +25,7 @@ public class MoreArrows : MonoBehaviour {
             GameObject parent = other.transform.parent.gameObject;
             int arrows = parent.GetComponentInChildren<Gunfire>().numArrows;
             parent.GetComponentInChildren<Gunfire>().numArrows = arrows + arrowsToAdd;
+			parent.GetComponentInChildren<Gunfire>().ArrowRect.sizeDelta = new Vector2(parent.GetComponentInChildren<Gunfire>().ArrowRect.sizeDelta.x+arrowsToAdd,1);
 
             Destroy(gameObject, fadeTime);
             GetComponentInChildren<LightScript>().FadeAway(fadeTime);

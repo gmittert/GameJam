@@ -39,7 +39,7 @@ public class VictoryChecks : MonoBehaviour {
 		}
 		VictoryBanner.SetActive (true);
 		
-		yield return new WaitForSeconds(1);
+		yield return new WaitForSeconds(3);
 		Application.LoadLevel (Application.loadedLevel);
 	}
 }

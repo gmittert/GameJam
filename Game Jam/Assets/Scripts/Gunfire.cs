@@ -16,7 +16,7 @@ public class Gunfire : MonoBehaviour {
 	public int numArrows = 3;
 	public GameObject ArrowUI;
 	private AudioSource source;
-	private RectTransform ArrowRect;
+	public RectTransform ArrowRect;
 	// Use this for initialization
 	void Start () {
 		ArrowRect = ArrowUI.GetComponent<RectTransform> ();
