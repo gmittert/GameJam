@@ -4,6 +4,8 @@ using System.Collections.Generic;
 public class PickupLightEmUp : MonoBehaviour {
 
     public float lightUpLength = 2.0f;
+    public float fadeTime = .25f;
+    public Vector3 spawnPoint;
     public GameObject lightPlayersUp;
 
     // Use this for initialization
@@ -13,7 +15,7 @@ public class PickupLightEmUp : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+        
 	}
 
     void OnTriggerEnter2D(Collider2D other)
@@ -33,9 +35,21 @@ public class PickupLightEmUp : MonoBehaviour {
                 }
             }
 
-            Destroy(gameObject);
+            Destroy(gameObject, fadeTime);
+            GetComponentInChildren<LightScript>().FadeAway(fadeTime);
+            GetComponent<CircleCollider2D>().enabled = false;
+            GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 0);
 
 
         }
+    }
+
+    void OnDestroy()
+    {
+        foreach (GameObject spawner in GameObject.FindGameObjectsWithTag("Spawner"))
+        {
+            spawner.SendMessage("Reset");
+        }
+
     }
 }

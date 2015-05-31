@@ -63,7 +63,6 @@ public class LightScript : MonoBehaviour {
 
     public void FadeAway(float timeToFade)
     {
-        Debug.Log("Going to die");
         fadeTime = timeToFade;
         age = 0f;
         Destroy(gameObject, timeToFade);
@@ -98,7 +97,6 @@ public class LightScript : MonoBehaviour {
 
         if (fadeTime != -1)
         {
-            Debug.Log("Dying!!");
             float percentDead = age / fadeTime;
             GetComponent<Light>().intensity = Mathf.Lerp(initialLightIntensity, 0f, percentDead);
             lightPercent *= percentDead;
