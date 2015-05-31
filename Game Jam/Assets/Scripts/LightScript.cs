@@ -45,8 +45,16 @@ public class LightScript : MonoBehaviour {
         }
     }
 
-    void OnDestroy()
-    {
+	void OnDisable()
+	{
+		foreach (characterLight character in characters)
+		{
+			character.removeLight(this);
+		}
+	}
+	
+	void OnDestroy()
+	{
         foreach (characterLight character in characters)
         {
             character.removeLight(this);
