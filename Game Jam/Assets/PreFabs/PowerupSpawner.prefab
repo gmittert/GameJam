@@ -39,8 +39,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 769fe7ff852050845a6f561e8be3a670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  earliestSpawn: 0
-  latestSpawn: 25
+  earliestSpawn: 3
+  latestSpawn: 15
   spawnLightEmUp: 1
   spawnMoreArrows: 1
   spawnBetterBow: 1

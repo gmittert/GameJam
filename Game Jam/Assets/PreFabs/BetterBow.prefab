@@ -142,9 +142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d13571989406d214cb96281635cff955, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightUpLength: 2
   fadeTime: .25
-  factorToIncreaseBowStrength: 2
+  factorToIncreaseBowStrength: 1.25
 --- !u!212 &21205192
 SpriteRenderer:
   m_ObjectHideFlags: 1

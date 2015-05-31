@@ -2,8 +2,7 @@
 using System.Collections;
 
 public class BetterBow : MonoBehaviour {
-
-    public float lightUpLength = 2.0f;
+    
     public float fadeTime = .25f;
     public float factorToIncreaseBowStrength = 2f;
 

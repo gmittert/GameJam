@@ -2,8 +2,7 @@
 using System.Collections;
 
 public class MoreArrows : MonoBehaviour {
-
-    public float lightUpLength = 2.0f;
+    
     public float fadeTime = .25f;
     public int arrowsToAdd = 2;
 
