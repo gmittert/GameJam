@@ -14,10 +14,12 @@ public class Gunfire : MonoBehaviour {
 	public string PlayerString = "P1";
 	public AudioClip shootSound;
 	public int numArrows = 3;
-
+	public GameObject ArrowUI;
 	private AudioSource source;
+	private RectTransform ArrowRect;
 	// Use this for initialization
 	void Start () {
+		ArrowRect = ArrowUI.GetComponent<RectTransform> ();
 	}
 
 
@@ -43,15 +45,17 @@ public class Gunfire : MonoBehaviour {
 
 			timer = 0;
 			numArrows--;
+			Debug.Log(ArrowRect.sizeDelta.x);
+			ArrowRect.sizeDelta = new Vector2(ArrowRect.sizeDelta.x-1,1);
 		}
 	}
 
 	void OnTriggerEnter2D (Collider2D col)
 	{
-		Debug.Log (col.gameObject.tag);
 		if (col.gameObject.tag == "GroundArrow")
 		{
 			numArrows++;
+			ArrowRect.sizeDelta = new Vector2(ArrowRect.sizeDelta.x+1,1);
 			Destroy(col.gameObject);
 		}
 	}
