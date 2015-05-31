@@ -43,7 +43,7 @@ public class Movement : MonoBehaviour {
             }
             else
             {
-                animator.SetBool("Idle", true);
+                animator.SetBool("idle", true);
             }
         }
         
