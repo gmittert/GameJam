@@ -4,10 +4,12 @@ using System.Collections;
 public class AimAndShoot : MonoBehaviour {
 	public float RotateSpeed = 10;
 	public string PlayerString = "P1";
+    private Animator animator;
 
-	// Use this for initialization
-	void Start () {
-		foreach (Transform child in transform){ 
+    // Use this for initialization
+    void Start () {
+        animator = transform.parent.gameObject.GetComponentInChildren<Animator>();
+        foreach (Transform child in transform){ 
 			Renderer[] renderers;
 			if (child.name == "PreppedArrow"){
 				renderers = child.gameObject.GetComponentsInChildren<Renderer>();
@@ -36,6 +38,7 @@ public class AimAndShoot : MonoBehaviour {
 					child.gameObject.SetActive(true);
 				}
 			}
+            animator.SetBool("shooting", true);
 		}
 		
 		if (Input.GetButtonUp ("Fire" + PlayerString)) {
@@ -48,8 +51,32 @@ public class AimAndShoot : MonoBehaviour {
 					}
 				}
 			}
-		}
-	}
+            animator.SetBool("shooting", false);
+        }
+
+        if (Mathf.Abs(aimVertical) > Mathf.Abs(aimHorizontal))
+        {
+            if (aimVertical > 0)
+            {
+                animator.SetInteger("shootingDirection", 2);
+            }
+            else if (aimVertical < 0)
+            {
+                animator.SetInteger("shootingDirection", 0);
+            }
+        }
+        else
+        {
+            if (aimHorizontal > 0)
+            {
+                animator.SetInteger("shootingDirection", 1);
+            }
+            else if (aimHorizontal < 0)
+            {
+                animator.SetInteger("shootingDirection", 3);
+            }
+        }
+    }
 	
 	void Aim(Vector3 targetAim){
 		if (targetAim != Vector3.zero) {
