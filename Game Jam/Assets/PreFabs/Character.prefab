@@ -301,7 +301,7 @@ MonoBehaviour:
   speed: 15
   speedVariance: 5
   PlayerString: P1
-  shootSound: {fileID: 8300000, guid: 6e78a5b674373c549b0bfaace2c84964, type: 3}
+  shootSound: {fileID: 0}
   numArrows: 3
   ArrowUI: {fileID: 0}
 --- !u!114 &11423844
