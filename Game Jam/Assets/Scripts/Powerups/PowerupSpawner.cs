@@ -1,47 +1,50 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class PowerupSpawner : MonoBehaviour {
 
     float randomSpawnTime;
     float age = 0f;
-    int pickupToSpawn;
+    GameObject pickupToSpawn;
     bool powerupOnLevel = false;
     public float earliestSpawn = 0f;
     public float latestSpawn = 25f;
-    public bool spawnLightEmUp = true;
-    public bool spawnMoreArrows = true;
-    public bool spawnBetterBow = true;
 
     public GameObject LightEmUp;
     public GameObject MoreArrows;
     public GameObject BetterBow;
 
+    public List<GameObject> powerups;
+
 	public AudioClip sound;
 	public AudioClip got;
-    // Use this for initialization
+    
     void Start () {
+        init();
         Setup();
+    }
+
+    void init()
+    {
+        powerups.Add(LightEmUp);
+        powerups.Add(MoreArrows);
+        powerups.Add(BetterBow);
     }
 
     void Setup()
     {
-        if (!spawnLightEmUp && !spawnMoreArrows && !spawnBetterBow)
+        if (powerups.Count == 0)
         {
+            Debug.Log("No Powerups!");
             Destroy(gameObject);
             return;
         }
         randomSpawnTime = Random.Range(earliestSpawn, latestSpawn);
-        pickupToSpawn = Random.Range(0, 3);
-        Debug.Log(pickupToSpawn);
-        while ((!spawnLightEmUp && pickupToSpawn == 0) || (!spawnMoreArrows && pickupToSpawn == 1) || (!BetterBow && pickupToSpawn == 2))
-        {
-            pickupToSpawn = Random.Range(0, 2);
-        }
+        pickupToSpawn = powerups[Random.Range(0, powerups.Count - 1)];
         Debug.Log(pickupToSpawn);
     }
 
-    // Update is called once per frame
     void Update () {
         if (!powerupOnLevel)
         {
@@ -60,19 +63,7 @@ public class PowerupSpawner : MonoBehaviour {
 
     void Spawn()
     {
-        GameObject powerUp;
-        switch (pickupToSpawn)
-        {
-            case 0:
-                powerUp = (GameObject)Instantiate(LightEmUp, transform.position, transform.rotation);
-                break;
-            case 1:
-                powerUp = (GameObject)Instantiate(MoreArrows, transform.position, transform.rotation);
-                break;
-            case 2:
-                powerUp = (GameObject)Instantiate(BetterBow, transform.position, transform.rotation);
-                break;
-        }
+        Instantiate(pickupToSpawn, transform.position, transform.rotation);
 		AudioSource.PlayClipAtPoint(sound,transform.position, 0.25f);
     }
 

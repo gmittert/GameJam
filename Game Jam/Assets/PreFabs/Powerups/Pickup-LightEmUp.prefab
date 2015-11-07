@@ -127,11 +127,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 100170}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcc154d0a8808274f864dbee586255b5, type: 3}
+  m_Script: {fileID: 11500000, guid: 05d19adaf73a50242b64c9a06775d96a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightUpLength: 2
   fadeTime: .25
+  lightUpLength: 2
   lightPlayersUp: {fileID: 179782, guid: a7fe598a599d84b4285265700fda30c5, type: 2}
 --- !u!114 &11421572
 MonoBehaviour:
