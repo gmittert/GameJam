@@ -27,12 +27,6 @@ public class PlayerProfile {
 
     public bool setControl(Controls control)
     {
-        string input = Input.inputString;
-        if(input != null)
-        {
-            //inputMapping[control].Add(input);
-            return true;
-        }
         return false;
     }
 
