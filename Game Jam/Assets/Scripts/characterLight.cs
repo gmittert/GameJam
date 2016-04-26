@@ -5,12 +5,10 @@ public class characterLight : MonoBehaviour {
 
     Dictionary<LightScript, float> lights;
 
-	// Use this for initialization
 	void Start () {
         lights = new Dictionary<LightScript, float>();
 	}
 	
-	// Update is called once per frame
 	void Update () {
         SetTransperency();
 	}

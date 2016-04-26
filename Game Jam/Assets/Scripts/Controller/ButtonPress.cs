@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
-using XInputDotNetPure;
 
 namespace ControlWrapping
 {
@@ -172,13 +171,13 @@ namespace ControlWrapping
         {
             get
             {
-                if (gamePadWrapper.CurrentState.Triggers.Left > .85 && gamePadWrapper.OldState.Triggers.Left > .85)
+                if (gamePadWrapper.CurrentState.Triggers.Left > gamePadWrapper.TriggerSensitivity && gamePadWrapper.OldState.Triggers.Left > gamePadWrapper.TriggerSensitivity)
                 {
                     return ButtonPressState.Constant;
                 }
                 else
                 {
-                    return gamePadWrapper.CurrentState.Triggers.Left > .85 ? ButtonPressState.Pressed : ButtonPressState.Released;
+                    return gamePadWrapper.CurrentState.Triggers.Left > gamePadWrapper.TriggerSensitivity ? ButtonPressState.Pressed : ButtonPressState.Released;
                 }
                 
             }
@@ -187,13 +186,13 @@ namespace ControlWrapping
         {
             get
             {
-                if (gamePadWrapper.CurrentState.Triggers.Right > .85 && gamePadWrapper.OldState.Triggers.Right > .85)
+                if (gamePadWrapper.CurrentState.Triggers.Right > gamePadWrapper.TriggerSensitivity && gamePadWrapper.OldState.Triggers.Right > gamePadWrapper.TriggerSensitivity)
                 {
                     return ButtonPressState.Constant;
                 }
                 else
                 {
-                    return gamePadWrapper.CurrentState.Triggers.Right > .85 ? ButtonPressState.Pressed : ButtonPressState.Released;
+                    return gamePadWrapper.CurrentState.Triggers.Right > gamePadWrapper.TriggerSensitivity ? ButtonPressState.Pressed : ButtonPressState.Released;
                 }
 
             }

@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
-using XInputDotNetPure;
 
 namespace ControlWrapping
 {
@@ -87,7 +86,7 @@ namespace ControlWrapping
         {
             get
             {
-                if (gamePadWrapper.CurrentState.Triggers.Left > .85)
+                if (gamePadWrapper.CurrentState.Triggers.Left > gamePadWrapper.TriggerSensitivity)
                 {
                     return ButtonState.Pressed;
                 }
@@ -98,7 +97,7 @@ namespace ControlWrapping
         {
             get
             {
-                if (gamePadWrapper.CurrentState.Triggers.Right > .85)
+                if (gamePadWrapper.CurrentState.Triggers.Right > gamePadWrapper.TriggerSensitivity)
                 {
                     return ButtonState.Pressed;
                 }

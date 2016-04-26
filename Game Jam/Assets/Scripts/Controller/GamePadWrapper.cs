@@ -13,6 +13,8 @@ namespace ControlWrapping
         private Trigger trigger;
         private ButtonPress buttonPress;
 
+        private float triggerSensitivity = .85f;
+
         public GamePadWrapper()
         {
             button = new Button(this);
@@ -39,6 +41,18 @@ namespace ControlWrapping
             get
             {
                 return oldState;
+            }
+        }
+
+        public float TriggerSensitivity
+        {
+            get
+            {
+                return triggerSensitivity;
+            }
+            set
+            {
+                triggerSensitivity = Mathf.Clamp(value, 0, 1);
             }
         }
 
