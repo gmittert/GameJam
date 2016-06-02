@@ -1,7 +1,4 @@
-﻿using UnityEngine;
-using System.Collections.Generic;
-
-namespace ControlWrapping
+﻿namespace ControlWrapping
 {
     public class ButtonPress
     {
@@ -11,6 +8,13 @@ namespace ControlWrapping
         {
             this.gamePadWrapper = gamePadWrapper;
         }
+
+        /*
+         * 
+         *  TODO: Right now these all do the full test to see if they're pressed down, which is already done in Button
+         *        They really should just be making calls to button but its not possible to make a call to Button with the OldState
+         * 
+         */
 
         public ButtonPressState X
         {
@@ -171,7 +175,7 @@ namespace ControlWrapping
         {
             get
             {
-                if (gamePadWrapper.CurrentState.Triggers.Left > gamePadWrapper.TriggerSensitivity && gamePadWrapper.OldState.Triggers.Left > gamePadWrapper.TriggerSensitivity)
+                if (gamePadWrapper.CurrentState.Triggers.Left > gamePadWrapper.TriggerSensitivity == gamePadWrapper.OldState.Triggers.Left > gamePadWrapper.TriggerSensitivity)
                 {
                     return ButtonPressState.Constant;
                 }
@@ -186,7 +190,7 @@ namespace ControlWrapping
         {
             get
             {
-                if (gamePadWrapper.CurrentState.Triggers.Right > gamePadWrapper.TriggerSensitivity && gamePadWrapper.OldState.Triggers.Right > gamePadWrapper.TriggerSensitivity)
+                if (gamePadWrapper.CurrentState.Triggers.Right > gamePadWrapper.TriggerSensitivity == gamePadWrapper.OldState.Triggers.Right > gamePadWrapper.TriggerSensitivity)
                 {
                     return ButtonPressState.Constant;
                 }

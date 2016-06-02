@@ -1,7 +1,4 @@
-﻿using UnityEngine;
-using System.Collections.Generic;
-
-namespace ControlWrapping
+﻿namespace ControlWrapping
 {
     public class Button
     {

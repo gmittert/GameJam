@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 public class LightScript : MonoBehaviour {
     float radius;
-    List<characterLight> characters;
+    List<PlayerLight> characters;
     public bool overrideLight = false;
     float fadeTime = -1f;
     float age = 0f;
@@ -11,7 +11,7 @@ public class LightScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        characters = new List<characterLight>();
+        characters = new List<PlayerLight>();
         //makes the detection opject the same size as the light
         radius = GetComponent<Light>().range;
         GetComponent<CircleCollider2D>().radius = radius;
@@ -21,14 +21,14 @@ public class LightScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         age += Time.deltaTime;
-        List<characterLight> toRemove = null;
-        foreach (characterLight character in characters)
+        List<PlayerLight> toRemove = null;
+        foreach (PlayerLight character in characters)
         {
             if (character == null)
             {
                 if (toRemove == null)
                 {
-                    toRemove = new List<characterLight>();
+                    toRemove = new List<PlayerLight>();
                 }
                 toRemove.Add(character);
             }
@@ -39,7 +39,7 @@ public class LightScript : MonoBehaviour {
         }
         if (toRemove != null)
         {
-            foreach (characterLight character in toRemove)
+            foreach (PlayerLight character in toRemove)
             {
                 characters.Remove(character);
             }
@@ -50,7 +50,7 @@ public class LightScript : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player")
         {
-            characters.Add(other.GetComponentInParent<characterLight>());
+            characters.Add(other.GetComponentInParent<PlayerLight>());
         }
     }
 
@@ -58,12 +58,12 @@ public class LightScript : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player")
         {
-            other.GetComponentInParent<characterLight>().removeLight(this);
-            characters.Remove(other.GetComponentInParent<characterLight>());
+            other.GetComponentInParent<PlayerLight>().removeLight(this);
+            characters.Remove(other.GetComponentInParent<PlayerLight>());
         }
     }
 
-    public void RemoveCharacter (characterLight character)
+    public void RemoveCharacter (PlayerLight character)
     {
         characters.Remove(character);
         Debug.Log("Removed: " + character);
@@ -75,7 +75,7 @@ public class LightScript : MonoBehaviour {
         {
             return;
         }
-		foreach (characterLight character in characters)
+		foreach (PlayerLight character in characters)
 		{
 			character.removeLight(this);
 		}

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class LightPlayersUp : MonoBehaviour {
 
-    public characterLight playerToStalk;
+    public PlayerLight playerToStalk;
     public float lifeSpan;
     float age = 0f;
 
