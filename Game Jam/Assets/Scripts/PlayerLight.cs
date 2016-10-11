@@ -11,10 +11,6 @@ public class PlayerLight : MonoBehaviour {
         characterSpritRender = GetComponent<SpriteRenderer>();
         arrowSpritRender = GetComponentInChildren<SpriteRenderer>();
     }
-	
-	void Update () {
-        //SetTransperency();
-	}
 
     public void SetTransperency ()
     {
@@ -24,7 +20,7 @@ public class PlayerLight : MonoBehaviour {
             alpha += light.Value;
         }
         Color spiteColour = characterSpritRender.color;
-        spiteColour.a = alpha; //TODO this should be clamped
+        spiteColour.a = Mathf.Clamp(alpha, 0, 1);//TODO
         characterSpritRender.color = spiteColour;
         arrowSpritRender.color = spiteColour;
     }

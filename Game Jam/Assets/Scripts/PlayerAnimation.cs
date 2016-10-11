@@ -44,7 +44,7 @@ public class PlayerAnimation : MonoBehaviour {
         }
     }
 
-    public void AimAnimation(float aimHorizontal, float aimVertical, Quaternion arrowAngle)
+    public void AimAnimation(float aimHorizontal, float aimVertical)
     {
         if (Mathf.Abs(aimVertical) > Mathf.Abs(aimHorizontal))
         {

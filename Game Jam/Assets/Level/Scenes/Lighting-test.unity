@@ -1810,8 +1810,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb18a82143630014997b1dfea458be3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSpritRender: {fileID: 0}
-  arrowSpritRender: {fileID: 0}
 --- !u!143 &1806702668
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1870,11 +1868,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b25d8dd4f1a206458d0fbe47f9c908f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 5
-  rotateSpeed: 10
-  fireRate: 0.1
-  arrowSpeed: 30
-  numberOfArrows: 3
   life: 1
   deathSprite: {fileID: 0}
 --- !u!1 &1889724050
@@ -1894,6 +1887,7 @@ GameObject:
   - 114: {fileID: 1889724061}
   - 114: {fileID: 1889724060}
   - 114: {fileID: 1889724059}
+  - 114: {fileID: 1889724055}
   m_Layer: 0
   m_Name: NewCharacter
   m_TagString: Player
@@ -1979,6 +1973,17 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &1889724055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1889724050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e62ac93824322494dae3d21069e3378c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1889724056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1990,11 +1995,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b25d8dd4f1a206458d0fbe47f9c908f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 400
-  rotateSpeed: 10
-  fireRate: 0.1
-  arrowSpeed: 30
-  numberOfArrows: 3
   life: 1
   deathSprite: {fileID: 0}
 --- !u!4 &1889724057
@@ -2033,6 +2033,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35f4a8794478d1b43a6d360c74b5c3a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotateSpeed: 10
+  fireRate: 0.1
+  arrowSpeed: 30
+  numberOfArrows: 3
 --- !u!114 &1889724060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2055,6 +2059,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c88a97e724f00234cb2d91fcc16620aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementSpeed: 200
+  isShooting: 0
 --- !u!1 &1964402037
 GameObject:
   m_ObjectHideFlags: 0
